@@ -1,0 +1,12 @@
+[Unit]
+Description=RTL_FM Bundled with UDP streamer.
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/home/pi/zellostream/rtlfmzello.sh
+WorkingDirectory=/home/pi/zellostream
+User=pi
+
+[Install]
+WantedBy=multi-user.target
